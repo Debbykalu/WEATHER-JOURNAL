@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/website/css/app.css" />
+    <title>Weather Journal APP</title>
+  </head>
+
+  <body>
+    <div id="main-section">
+      <header>
+        <h1 class="main-title">Weather Journal for Everyone</h1>
+      </header>
+      <div class="zip-section">
+        <form>
+          <input type="text" id="zip" placeholder="Enter zip code" />
+        </form>
+      </div>
+      <!--zip section-->
+      <div class="feelings-section">
+        <textarea
+          name="feelings"
+          id="feeling"
+          cols="30"
+          rows="5"
+          placeholder="Tell me how you are feelings today?"
+        ></textarea>
+        <button class="feelings-button" id="generate" type="submit">
+          Generate
+        </button>
+      </div>
+      <!--feelings section-->
+      <div class="holder-section">
+        <div class="holder-title">Most Recent Entry:</div>
+        <div id="entryHolder">
+          <div id="city"></div>
+          <div id="temp"></div>
+          <div id="date"></div>
+          <div id="content"></div>
+        </div>
+      </div>
+      <!--holder section-->
+    </div>
+    <!--main section-->
+
+    <script src="/website/app.js"></script>
+  </body>
+</html>
